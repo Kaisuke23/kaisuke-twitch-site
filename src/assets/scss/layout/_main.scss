@@ -18,6 +18,10 @@
 		z-index: 3;
 		display: none;
 
+		#Instafeed{
+			padding-left: 6.5rem;
+		}
+
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
 			@include vendor('transition', (

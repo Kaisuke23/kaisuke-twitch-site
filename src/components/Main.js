@@ -4,10 +4,7 @@ import ReactPlayer from 'react-player'
 import Table from './table.js';
 import Table1 from './table1.js'
 import Feed from './feed'
-
-// import pic01 from '../images/pic01.jpg'
-// import pic02 from '../images/pic02.jpg'
-// import pic03 from '../images/pic03.jpg'
+import ResponsivePlayer from './player.js'
 
 class Main extends React.Component {
   render() {
@@ -29,7 +26,7 @@ class Main extends React.Component {
         {command: '!weebs', description: 'You know who are the weebs'},
         {command: '!dead', description: 'just gotta pay them respects'},
         {command: '!discord', description: 'if you like my stream, join the discord'},
-        {command: '!airdkawaii', description: 'a kawaii raid'},
+        {command: '!raidkawaii', description: 'a kawaii raid'},
         {command: '!rankweeb', description: 'the weeb raid'},
         {command: '!raidranch', description: 'RANCH IT UP!'},
     ];
@@ -48,10 +45,10 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">The Stream</h2>
-          <p>The gundam stream has commenced please sit back and relax</p>
-          <ReactPlayer className = "player" url='https://www.twitch.tv/kaisuke' playing='false' height = "620" width="380"/>
-          <p>If you do like the stream, please consider watching it on <a href = "https://www.twitch.tv/kaisuke">twitch</a></p>
+          <h2 className="major">About the Stream</h2>
+          <p>I am kaisuke, a streamer from hawaii who has moved to Washington. Normally i would stream something called gunpla, which are gundam plastic models. We get into the weird shenanigans talking about anime, video games, and other pop culture types of things.</p>
+
+          <p>If you do like the description, please consider watching it on <a href = "https://www.twitch.tv/kaisuke">twitch</a></p>
           {close}
         </article>
 
