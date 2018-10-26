@@ -6,3 +6,7 @@ Thank you to codebushi for the [template](https://www.gatsbyjs.org/starters/gats
 
 # Practice
 This will be practice for personal website building using react
+
+
+#Icon
+The icon was designed by a friend of mine DiggyStock! 

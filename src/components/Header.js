@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Barbados from '../images/Gundam_Barbatos.png'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
+      <link rel="icon"
+      type="image/png"
+      href={Barbados}/>
         <div className="logo">
             <span className="icon fa-twitch"></span>
         </div>
